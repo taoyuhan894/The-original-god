@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《原神》官网-踏入充满冒险的神奇世界</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/firstScreen.css">
+  <link rel="stylesheet" href="../css/newsScreen.css">
+  <link rel="stylesheet" href="../css/cityScreen.css">
+  <link rel="stylesheet" href="../css/aboutScreen.css">
+  <link rel="stylesheet" href="../css/aside.css">
+
+  <script>
+    (function () {
+      function setFont() {
+        const designWidth = 750;
+        document.documentElement.style.fontSize =
+          (document.documentElement.clientWidth / designWidth) * 100 + "px"
+      }
+      setFont();
+      window.addEventListener("resize", setFont);
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="aside">
+      <div class="mainAside">
+        <div class="top">
+          <button class="button_close">
+            <img src="../assets/button_close.png">
+          </button>
+        </div>
+        <div class="sixLists">
+          <ul class="data_lists">
+            <li>
+              <a href="#" class="leftActive">首页</a>
+            </li>
+            <li>
+              <a href="#">新闻</a>
+            </li>
+            <li>
+              <a href="#">角色</a>
+            </li>
+            <li>
+              <a href="#">世界</a>
+            </li>
+            <li>
+              <a href="#">漫画</a>
+            </li>
+            <li>
+              <a href="#">社区</a>
+            </li>
+          </ul>
+        </div>
+        <div class="login">
+          <div class="loginButton">
+            登录
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <header class="nav">
+        <div class="nav_content">
+          <img src="../assets/logo1.png" class="logo1">
+          <button class="button_open">
+            <img src="../assets/button_open.png">
+          </button>
+        </div>
+      </header>
+      <!-- 首屏 -->
+      <div id="firstScreen">
+        <!-- 背景视频 -->
+        <div>
+          <video class="bgvideo" src="../assets/bgvideo.mp4" muted autoplay loop></video>
+        </div>
+        <!-- logo -->
+        <div class="logo" style="display: block;">
+          <img src="../assets/logo1.png" alt="">
+        </div>
+        <!-- 下方一些按钮 -->
+        <div id="posterMain">
+          <!-- 播放按钮 -->
+          <div class="playBtnContainer">
+            <button class="playBtn">播放</button>
+          </div>
+          <!-- 游戏下载 -->
+          <div class="downloadWrapper">
+            <!-- 按钮组 -->
+            <div class="btnGroup">
+              <a href="#">
+                <img src="../assets/youxixiazai.png" alt="">
+              </a>
+              <a href="#">
+                <img src="../assets/tapxiazai.png" alt="">
+              </a>
+            </div>
+            <!-- 版权信息 -->
+            <div class="txts">
+              <p class="txtsBlock">开发者名称：上海米哈游天命科技有限公司</p>
+              <p class="txtsBlock">
+                <span>当前版本：1.6.0</span>
+                <span>更新时间：2021.6.9</span>
+              </p>
+              <p class="txtsBlock">
+                <a href="#">隐私协议</a>
+                <a href="#">用户权限</a>
+              </p>
+            </div>
+          </div>
+          <!-- 下拉箭头 -->
+          <div class="posterArrows">
+            <div class="arrow arrow1"></div>
+            <div class="arrow arrow2"></div>
+            <div class="arrow arrow3"></div>
+          </div>
+        </div>
+        <!-- 适龄提示 -->
+        <div class="badge">
+          <img src="../assets/shilingtishi.png">
+        </div>
+      </div>
+
+      <!-- 新闻 -->
+      <div id="newsScreen">
+        <h3>新闻资讯</h3>
+        <div class="newsMain">
+
+          <!-- 轮播图容器 -->
+          <div class="swiperContainer">
+            <ul class="swiperWrapper">
+              <li>
+                <a href="#">
+                  <img src="../assets/swiperImage1.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/swiperImage2.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/swiperImage3.jpg">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="../assets/swiperImage4.jpg">
+                </a>
+              </li>
+            </ul>
+            <ul class="swiperDotsContainer">
+              <li data-id="0" class="swiperDotsItem swiperDotsItemActive"></li>
+              <li data-id="1" class="swiperDotsItem"></li>
+              <li data-id="2" class="swiperDotsItem"></li>
+              <li data-id="3" class="swiperDotsItem"></li>
+            </ul>
+          </div>
+
+          <!-- 新闻列表容器 -->
+          <div class="newsListContainer">
+            <ul class="newsTabList">
+              <li data-id="0" class="newsTabItem newsTabItemActive">最新</li>
+              <li data-id="1" class="newsTabItem">新闻</li>
+              <li data-id="2" class="newsTabItem">公告</li>
+              <li data-id="3" class="newsTabItem">活动</li>
+            </ul>
+            <ul class="newsList">
+              <!-- <li>
+                <a href="#" class="newsItem" title="知乎《原神》同人主题原创绘画活动现已开启">
+                  <p class="newsTitle">知乎《原神》同人主题原创绘画活动现已开启</p>
+                  <p class="newsDate">2021/07/08</p>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+
+        </div>
+        <a href="#" class="newsMore">更多资讯</a>
+      </div>
+
+      <!-- 城市 -->
+      <div id="cityScreen">
+        <ul class="cityList">
+          <li style="background: url('../assets/mengdecheng.jpg') center no-repeat;background-size: cover;">
+            <a href="https://ys.mihoyo.com/main/m/character/mondstadt?char=0">蒙德城</a>
+          </li>
+          <li style="background: url('../assets/liyuegang.jpg') center no-repeat;background-size: cover;">
+            <a href="https://ys.mihoyo.com/main/m/character/liyue?char=0">璃月港</a>
+          </li>
+          <li style="background: url('../assets/jingqingqidai.jpg') center no-repeat;background-size: cover;">
+            <p>敬请期待</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 关于我们 -->
+      <div id="aboutScreen">
+        <h3>关注我们</h3>
+        <div class="wx">
+          <p>
+            <span class="icon icon-wx"></span>
+            关注原神
+            <span>微信公众号</span>
+          </p>
+          <img src="../assets/wechat.png">
+          <p>扫码关注微信</p>
+        </div>
+        <div class="lists">
+          <p>
+            <span class="icon icon-wx"></span>
+            关注原神
+            <span>微信公众号</span>
+            <span>&gt;</span>
+          </p>
+          <p>
+            <span class="icon icon-wx"></span>
+            关注原神
+            <span>微信公众号</span>
+            <span>&gt;</span>
+          </p>
+          <p>
+            <span class="icon icon-wx"></span>
+            关注原神
+            <span>微信公众号</span>
+            <span>&gt;</span>
+          </p>
+        </div>
+        <div class="qq">
+          <p>
+            <span class="icon icon-qq"></span>
+            关注原神
+            <span>官方Q群</span>
+          </p>
+          <ul class="message">
+            <li>
+              <span>原神米游社官方群</span>
+              <span>272031457(已满)</span>
+            </li>
+            <li>
+              <span>原神官方玩家群13</span>
+              <span>1083677782</span>
+            </li>
+            <li>
+              <span>原神官方玩家群12</span>
+              <span>1083677782</span>
+            </li>
+            <li>
+              <span>原神官方玩家群11</span>
+              <span>1083677782</span>
+            </li>
+            <li>
+              <span>原神官方玩家群10</span>
+              <span>1083677782</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 页脚 -->
+      <div id="footerScreen">
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/tool.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

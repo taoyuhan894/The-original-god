@@ -1,0 +1,38 @@
+.container .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  z-index: 888;
+  height: 1.4rem;
+}
+.container .nav .nav_content {
+  position: relative;
+}
+.container .nav .nav_content .logo1 {
+  display: none;
+}
+.container .nav .nav_content button {
+  background: none;
+  position: fixed;
+  z-index: 9999;
+  right: .4rem;
+  top: .4rem;
+  border: none;
+}
+.container .nav .nav_content button img {
+  width: .5rem;
+}
+
+/* 激活状态 */
+.container .navActive {
+  background: rgba(0,0,0,0.75);
+}
+.container .navActive .nav_content .logo1{
+  position: absolute;
+  left: .4rem;
+  top: 0;
+  display: block;
+  width: 1.8rem;
+  height: auto;
+}

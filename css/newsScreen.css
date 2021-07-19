@@ -1,0 +1,190 @@
+#newsScreen {
+  width: 100%;
+  height: 13.35rem;
+  background: url("../assets/xinwenbeijing.jpg") no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#newsScreen h3 {
+  position: relative;
+  margin: 0.75rem auto 0.35rem;
+  font-size: 0.42rem;
+  font-weight: 400;
+  width: 1.68rem;
+  height: .56rem;
+  text-align: center;
+  color: white;
+}
+
+#newsScreen h3::before,
+#newsScreen h3::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 2.7rem;
+  height: 0.14rem;
+  background: url("../assets/xinwenbefore.png") no-repeat right center/cover;
+}
+
+#newsScreen h3::before {
+  left: 0;
+  transform: translate(calc(-100% - 0.15rem), -50%);
+}
+
+#newsScreen h3::after {
+  right: 0;
+  transform: translate(calc(100% + 0.15rem), -50%) rotateY(180deg);
+}
+
+/* 轮播样式 */
+#newsScreen .newsMain .swiperContainer {
+  position: relative;
+  width: 6.4rem;
+  margin: 0 auto;
+  outline: .02rem solid #fff;
+  box-sizing: border-box;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.swiperContainer .swiperWrapper {
+  width: 25.6rem;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s;
+}
+
+.swiperContainer .swiperWrapper li {
+  width: 6.4rem;
+  height: 100%;
+}
+
+.swiperContainer .swiperWrapper li img {
+  width: 100%;
+}
+
+/* 小圆点样式 */
+.swiperContainer .swiperDotsContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: .16rem;
+  display: flex;
+}
+
+.swiperContainer .swiperDotsContainer li {
+  width: .22rem;
+  height: .22rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border: solid .04rem rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0 0 .24rem 0 rgb(17 17 17 / 30%);
+  opacity: 1;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+.swiperContainer .swiperDotsContainer .swiperDotsItemActive {
+  background-color: white;
+}
+
+/* 更多资讯样式 */
+#newsScreen .newsMore {
+  position: absolute;
+  left: 50%;
+  bottom: 1.09rem;
+  display: block;
+  width: 6.4rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.28rem;
+  color: #ffd49f;
+  text-align: center;
+  background: rgba(255, 212, 159, 0.1);
+  border: rgba(255, 212, 159, 0.7) solid 0.02rem;
+  border-radius: 0.04rem;
+  transform: translateX(-50%);
+}
+
+
+
+/* 新闻列表样式 */
+.newsListContainer {
+  position: relative;
+  width: 6.4rem;
+  margin: 0 auto;
+}
+
+.newsListContainer .newsTabList {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0.35rem auto 0;
+  border-bottom: 0.03rem solid rgba(255, 255, 255, 0.1);
+}
+
+.newsListContainer .newsTabList .newsTabItem {
+  padding: 0 0.15rem 0.1rem;
+  font-size: 0.32rem;
+  margin: 0 0.135rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.newsListContainer .newsTabList .newsTabItemActive {
+  color: #ffd49f;
+}
+
+.newsListContainer .newsTabList .newsTabItemActive::after {
+  position: absolute;
+  left: 0;
+  bottom: -0.03rem;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0.03rem;
+  background: #ffd49f;
+}
+
+.newsListContainer .newsList {
+  width: 100%;
+  margin: 0 auto;
+  height: 4.6rem;
+  overflow: hidden;
+}
+
+.newsListContainer .newsList .newsItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.02rem solid rgba(255, 255, 255, 0.08);
+  font-size: 0.24rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.newsListContainer .newsList .newsItem .newsTitle {
+  width: 4.8rem;
+  height: 0.92rem;
+  line-height: 0.92rem;
+  padding-left: 0.11rem;
+  overflow: hidden;
+}
+
+.newsListContainer .newsList .newsItem .newsDate {
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.2rem;
+  height: 0.92rem;
+  line-height: 0.92rem;
+  margin: 0 0.11rem;
+}

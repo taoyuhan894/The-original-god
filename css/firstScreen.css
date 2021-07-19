@@ -1,0 +1,173 @@
+#firstScreen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 视频样式 */
+#firstScreen .bgvideo {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  /* 指定元素的内容应该如何去适应指定的容器的高度和宽度
+  cover：代表保持原有尺寸比例，但部分内容可能被裁减 */
+  object-fit: cover;
+  /* 禁止用户选择 */
+  user-select: none;
+}
+
+/* logo样式 */
+#firstScreen .logo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 1.8rem;
+  font-size: 0;
+  user-select: none;
+  text-align: center;
+}
+
+#firstScreen .logo img {
+  height: 2.94rem;
+}
+
+
+
+/* posterMain */
+#posterMain {
+  width: 100%;
+  height: 4.2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#posterMain .playBtnContainer {
+  width: 3.56rem;
+  height: 0.76rem;
+  margin: 0 auto;
+  background: url("../assets/anniubeijing.png") no-repeat center center;
+  background-size: cover;
+  transform: scale(1.5);
+  margin-bottom: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#posterMain .playBtnContainer .playBtn {
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 0;
+}
+
+#posterMain .playBtnContainer .playBtn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.28rem;
+  height: 0.28rem;
+  transform: translate(-50%, -50%);
+  background: url("../assets/bofanganniu.png") no-repeat;
+  background-size: 0.28rem auto;
+  background-position: center top;
+}
+
+#posterMain .downloadWrapper {
+  margin-bottom: 0.2rem;
+  width: 6rem;
+  font-size: .2rem;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#posterMain .downloadWrapper .btnGroup {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: .2rem;
+}
+
+#posterMain .downloadWrapper .btnGroup img {
+  width: 2.4rem;
+  height: .78rem;
+}
+
+#posterMain .downloadWrapper .txts .txtsBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 6rem;
+  height: 0.272rem;
+  font-size: 0.22rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.06rem;
+  background: url("../assets/huisebeijing.png") center/cover no-repeat;
+}
+
+#posterMain .downloadWrapper .txts .txtsBlock a {
+  color: white;
+  text-decoration: underline;
+}
+#posterMain .posterArrows {
+  position: absolute;
+  width: 0.25rem;
+  height: 0.45rem;
+  left: calc(50% - 0.125rem);
+  bottom: .1rem;
+}
+@keyframes myArrow {
+  0% {
+    opacity: .8;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+/* 箭头容器 */
+#posterMain .posterArrows .arrow {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.15rem;
+  background: url("../assets/arrow.png") center/cover no-repeat;
+  background-color: transparent;
+  animation: myArrow 1.5s linear infinite;
+}
+#posterMain .posterArrows .arrow1 {
+  top: 0;
+  animation-delay: 0s;
+}
+#posterMain .posterArrows .arrow2 {
+  top: 0.12rem;
+  animation-delay: 0.25s;
+}
+#posterMain .posterArrows .arrow3 {
+  top: 0.25rem;
+  animation-delay: .75s;
+}
+
+
+/* 适龄提示 */
+.badge {
+  position: absolute;
+  width: .9rem;
+  left: .1rem;
+  top: .1rem;
+  z-index: 20;
+}
+.badge img {
+  width: 100%;
+}
